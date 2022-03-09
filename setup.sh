@@ -1,4 +1,2 @@
-#!/bin/bash
-install postgresql postgresql-contrib
-
-service postgresql start
+-u postgres psql -c
+"create user mob_db_user with password 'mob_db_pass';"
