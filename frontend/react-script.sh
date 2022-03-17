@@ -13,3 +13,9 @@ sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+#clone react app
+cd /var/www/html/
+sudo git clone https://github.com/sdg000/Mobalysis.git
+cd Mobalysis/frontend
+sudo npm install
+sudo npm run build
