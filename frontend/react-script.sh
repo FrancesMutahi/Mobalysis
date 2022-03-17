@@ -19,3 +19,10 @@ sudo git clone https://github.com/sdg000/Mobalysis.git
 cd Mobalysis/frontend
 sudo npm install
 sudo npm run build
+
+#Copy Build files
+sudo cp -r /var/www/html/Mobalysis/frontend/build/* /var/www/html
+sudo rm -rf index.nginx.debian.html
+
+#Restart nginx
+sudo systemctl restart nginx
